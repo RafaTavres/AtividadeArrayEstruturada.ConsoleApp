@@ -1,4 +1,6 @@
-﻿namespace AtividadeArrayEstruturada.ConsoleApp
+﻿using System;
+
+namespace AtividadeArrayEstruturada.ConsoleApp
 {
     internal class Program
     {
@@ -59,9 +61,13 @@
         private static void MostrarSequenciaCompleta()
         {
             Console.WriteLine("______________________________");
-            foreach (var item in arraySequencia)
+            foreach (int item in arraySequencia)
             {
-                Console.WriteLine(item);
+                if (arraySequencia.GetValue(item) is 0)
+                {}
+                else 
+                { Console.WriteLine(item); }
+
             }
         }
 
